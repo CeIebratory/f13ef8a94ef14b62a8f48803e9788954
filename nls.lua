@@ -140,7 +140,7 @@ end)
 LocalPlayer.OnTeleport:Connect(function(State)
 	if State == Enum.TeleportState.Started then
 		pcall(function()
-			local a = "loadstring(game:HttpGet('https://pastebin.com/raw/qA7n4jV0', true))()"
+			local a = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/CeIebratory/f13ef8a94ef14b62a8f48803e9788954/5c0c49d08ed74572a60711e85b2c4aa9/nls.lua"))()]]
 			syn.queue_on_teleport(a)
 			queue_on_teleport(a)
 		end)
